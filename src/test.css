@@ -1,0 +1,99 @@
+.App{
+    padding:20px;
+    font-family:  sans-serif;
+    text-align:center
+}
+
+.input-container{
+    margin-bottom:20px
+}
+
+.input-container input{
+    padding:8px;
+    width:200px;
+    margin-right: 10px;
+}
+
+.columns{
+    display:flex;
+    justify-content:space-between;
+   
+    gap: 20px;
+}
+
+.column{
+    width: 30%;
+
+    border-radius:4px;
+    background-color:#e9dddd;
+}
+
+.droppable-column{
+    padding:10px;
+    min-height:200px;
+    border-radius:4px;
+    background-color:#f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+
+.task{
+    padding:10px;
+    margin-bottom:8px;
+    border-radius:4px;
+    background-color: white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dragging-over{
+    background-color: #8d9290;
+}
+/* 
+.App {
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  width: 30%;
+  background-color: #e9dddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.droppable-column {
+  padding: 10px;
+  min-height: 200px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s ease;
+}
+
+.task {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dragging-over {
+  background-color: #68b191;
+} */

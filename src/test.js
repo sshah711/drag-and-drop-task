@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState } from "react";
 import "./test.css";
@@ -13,7 +12,7 @@ const col = {
     title: "To Do",
     items: [],
   },
-  inprogress: {
+  inProgress: {
     title: "In Progress",
     items: [],
   },
@@ -24,7 +23,7 @@ const col = {
 };
 
 function App() {
-  const [columns, setColumns] = useState(col);
+  const [columns, setColumns] = useState(clo);
   const [taskText, setTaskText] = useState("");
 
   const handleAddTask = () => {
@@ -46,13 +45,8 @@ function App() {
     if (!result.destination) return;
 
     const { source, destination } = result;
-    const allowedMoves={
-      todo:["inprogress"],
-      inprogress:[ "done"],
-      done:[]
-  }
 
-    if (source.droppableId === destination.droppableId) {
+    if (source.DroppableId === destination.DroppableId) {
       const items = [...columns[source.droppableId].items];
       const [recordedItem] = items.splice(source.index, 1);
       items.splice(destination.index, 0, recordedItem);
@@ -63,13 +57,7 @@ function App() {
           items: items,
         },
       });
-    } 
-    
-    if (!allowedMoves[source.droppableId].includes(destination.droppableId)) {
-      return;
-    }
-    
-    else {
+    } else {
       const sourceItems = [...columns[source.droppableId].items];
       const destinationItems = [...columns[destination.droppableId].items];
       const [movedItem] = sourceItems.splice(source.index, 1);
@@ -146,4 +134,3 @@ function App() {
   );
 }
 export default App;
-
